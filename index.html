@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林祖媽 | 銷冠個人數位名片</title>
+    <!-- 引入 Tailwind CSS 進行現代化視覺設計 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Font Awesome 繽紛的社群圖標庫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入高質感 Google 字體：Inter 與 繁體中文 類黑體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+        }
+        /* 銷冠金屬光澤漸層動畫 */
+        .gold-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FCE0AD 0%, #DFAC6C 50%, #C68B45 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-zinc-900 to-stone-900 min-h-screen flex flex-col items-center justify-center p-4 text-slate-100 antialiased overflow-x-hidden">
+
+    <!-- 網頁主要內容容器 -->
+    <div class="w-full max-w-md bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 hover:border-amber-500/30 gold-glow">
+        
+        <div class="relative h-32 bg-gradient-to-r from-amber-600 to-amber-900 flex justify-end p-4">
+            <!-- 裝飾用光球，增加名片層次感 -->
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_30%,#FFF,transparent)]"></div>
+            <!-- 右上角精美徽章 -->
+            <span class="relative z-10 self-start bg-black/40 text-amber-300 text-xs font-bold px-3 py-1.5 rounded-full border border-amber-500/40 backdrop-blur-md">
+                <i class="fa-solid fa-crown mr-1"></i> TOP SALES
+            </span>
+        </div>
+
+        <div class="relative flex justify-center -mt-16">
+            <div class="relative group">
+                <!-- 頭像金色呼吸燈特效 -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
+                <!-- 大頭照主體 -->
+                <img 
+                    src="https://taiwanallison101.github.io/namecardLin/allison.png" 
+                    alt="林祖媽大頭照" 
+                    class="relative w-32 h-32 object-cover rounded-full border-4 border-zinc-950 bg-zinc-800 shadow-xl"
+                    onerror="this.src='https://placehold.co/150x150/d4af37/ffffff?text=林祖媽'"
+                >
+            </div>
+        </div>
+
+        <div class="px-6 pt-5 pb-8 text-center">
+            <!-- 姓名 -->
+            <h1 class="text-3xl font-extrabold tracking-wide text-white">林祖媽</h1>
+            <!-- 職稱 -->
+            <div class="mt-2 inline-flex items-center px-4 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full text-sm font-semibold">
+                <i class="fa-solid fa-trophy mr-1.5 text-xs"></i> 銷冠 (Sales Champion)
+            </div>
+
+            <!-- 自介區塊 -->
+            <div class="mt-6 text-left bg-zinc-950/40 p-5 rounded-2xl border border-zinc-800/60">
+                <h3 class="text-xs font-bold text-amber-500/80 uppercase tracking-widest mb-2 flex items-center">
+                    <i class="fa-solid fa-user-tie mr-1.5"></i> 關於我 About Me
+                </h3>
+                <p class="text-sm text-zinc-300 leading-relaxed font-light">
+                    我是林祖媽，一名天生的行銷與銷售冠軍。憑藉精準的市場洞察、溫慢的客戶共情力，我專注於將好產品轉化為令人心動的故事，帶領團隊突破每一次業績極限。對我而言，銷售不只是成交，更是與你共同創造價值的起點。期待與你攜手合作！
+                </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 mt-6">
+                <div class="bg-zinc-950/20 p-3 rounded-xl border border-zinc-800/40">
+                    <p class="text-xs text-zinc-400">成交經驗</p>
+                    <p class="text-lg font-bold text-white mt-1">10年+</p>
+                </div>
+                <div class="bg-zinc-950/20 p-3 rounded-xl border border-zinc-800/40">
+                    <p class="text-xs text-zinc-400">滿意指標</p>
+                    <p class="text-lg font-bold text-white mt-1">99.8%</p>
+                </div>
+                <div class="bg-zinc-950/20 p-3 rounded-xl border border-zinc-800/40">
+                    <p class="text-xs text-zinc-400">年度業績</p>
+                    <p class="text-lg font-bold text-amber-400 mt-1">破億</p>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-3">
+                    點擊與我建立連結
+                </h3>
+                <div class="flex items-center justify-center gap-5">
+                    <!-- FB -->
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                       class="w-12 h-12 flex items-center justify-center bg-zinc-800 hover:bg-blue-600 rounded-full text-zinc-300 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-blue-600/20 border border-zinc-700 hover:border-blue-500">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <!-- IG -->
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+                       class="w-12 h-12 flex items-center justify-center bg-zinc-800 hover:bg-gradient-to-tr hover:from-yellow-500 hover:to-purple-600 rounded-full text-zinc-300 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-pink-600/20 border border-zinc-700 hover:border-pink-500">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
+                    <!-- YT -->
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" 
+                       class="w-12 h-12 flex items-center justify-center bg-zinc-800 hover:bg-red-600 rounded-full text-zinc-300 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-red-600/20 border border-zinc-700 hover:border-red-500">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 space-y-3">
+                <!-- 預約諮詢按鈕 -->
+                <button onclick="openModal('consult')" 
+                        class="w-full py-4 px-6 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold rounded-2xl shadow-lg shadow-amber-500/20 transition duration-300 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    預約一對一策略諮詢
+                </button>
+                
+                <!-- 點擊複製聯絡方式按鈕 -->
+                <button onclick="copyLineID()" 
+                        class="w-full py-3.5 px-6 bg-zinc-800/80 hover:bg-zinc-800 text-zinc-200 hover:text-white font-medium rounded-2xl transition duration-300 border border-zinc-700 hover:border-zinc-600 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-copy text-amber-400"></i>
+                    <span>複製官方 LINE ID</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾宣告 -->
+    <footer class="mt-8 text-center text-xs text-zinc-600">
+        <p>© 2026 林祖媽 個人名片. 版權所有</p>
+    </footer>
+
+    <!-- 1. 策略諮詢彈窗 -->
+    <div id="consultModal" class="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl w-full max-w-sm p-6 shadow-2xl relative transform scale-95 transition-transform duration-300">
+            <!-- 關閉按鈕 -->
+            <button onclick="closeModal('consult')" class="absolute top-4 right-4 text-zinc-400 hover:text-white text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="text-center">
+                <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">預約您的金牌策略諮詢</h3>
+                <p class="text-sm text-zinc-400 mb-6">請留下您的需求，祖媽會親自與您聯繫，為您量身規劃銷售與行銷方案！</p>
+                
+                <!-- 簡易收集表單 -->
+                <div class="space-y-3 text-left">
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-400 mb-1">您的姓名</label>
+                        <input type="text" id="userName" placeholder="如何稱呼您？" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-400 mb-1">聯絡電話 / LINE</label>
+                        <input type="text" id="userContact" placeholder="方便聯絡的管道" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                </div>
+                
+                <!-- 提交按鈕（已增加 Loading 狀態的視覺支援） -->
+                <button id="submitBtn" onclick="submitConsult()" class="w-full mt-6 py-3 bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold rounded-xl transition duration-200 flex items-center justify-center gap-2">
+                    <span id="btnText">送出預約，搶佔先機</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. 系統提示小吐司 (Toast Message) -->
+    <div id="toast" class="fixed bottom-8 bg-zinc-800 text-white text-sm font-medium px-5 py-3 rounded-2xl shadow-xl border border-zinc-700 flex items-center gap-2 hidden transform translate-y-10 opacity-0 transition-all duration-300 z-50">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toastText">複製成功！</span>
+    </div>
+
+    <script>
+        // =================【系統參數設定區】=================
+        // ⚠️ 請把你在 Google Apps Script 部署得到的「網頁應用程式 URL」貼在下方單引號內：
+        const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyRDPntNYPQdqTk9Ba9IqHO_BYveEG_DNmJG8SDxpM-ygVcraTgq6-tlXV0lXfZ0O5l/exec';
+        // ===================================================
+
+        // 1. 開啟彈出視窗
+        function openModal(type) {
+            if (type === 'consult') {
+                const modal = document.getElementById('consultModal');
+                modal.classList.remove('hidden');
+                // 延遲一下讓 CSS 漸變動畫生效
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modal.firstElementChild.classList.remove('scale-95');
+                }, 50);
+            }
+        }
+
+        // 2. 關閉彈出視窗
+        function closeModal(type) {
+            if (type === 'consult') {
+                const modal = document.getElementById('consultModal');
+                modal.classList.add('opacity-0');
+                modal.firstElementChild.classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        // 3. 送出預約諮詢（整合雲端試算表傳送功能）
+        function submitConsult() {
+            const name = document.getElementById('userName').value.trim();
+            const contact = document.getElementById('userContact').value.trim();
+
+            // 基本防呆驗證
+            if (!name || !contact) {
+                showToast('請填寫姓名與聯絡資訊喔！', 'warning');
+                return;
+            }
+
+            // 貼心防呆：如果使用者還沒更換 GAS URL，提示他們去設定
+            if (GAS_WEB_APP_URL === 'YOUR_GAS_WEB_APP_URL_HERE') {
+                showToast('教練提示：請先將 HTML 程式碼中的 GAS_WEB_APP_URL 改成您部署好的網址喔！', 'warning');
+                return;
+            }
+
+            // 控制按鈕狀態，進入 Loading 狀態（防重複點擊）
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            
+            submitBtn.disabled = true;
+            submitBtn.classList.remove('bg-amber-500', 'hover:bg-amber-400');
+            submitBtn.classList.add('bg-zinc-700', 'text-zinc-400', 'cursor-not-allowed');
+            btnText.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> 資料傳送中...`;
+
+            // 開始包裝「快遞資料」
+            const urlEncodedData = new URLSearchParams();
+            urlEncodedData.append('name', name);
+            urlEncodedData.append('contact', contact);
+
+            // 使用 fetch API 發送 POST 請求
+            fetch(GAS_WEB_APP_URL, {
+                method: 'POST',
+                mode: 'no-cors', // 使用 no-cors 模式確保在 iFrame 與不同網域中順利發送
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: urlEncodedData
+            })
+            .then(() => {
+                // 由於 no-cors 模式下無法讀取 response 內容，只要請求成功發出（無報錯），就代表寫入成功！
+                closeModal('consult');
+                
+                // 重設輸入欄位
+                document.getElementById('userName').value = '';
+                document.getElementById('userContact').value = '';
+
+                // 顯示成功感謝通知
+                setTimeout(() => {
+                    showToast(`感謝您，${name}！預約資料已寫入雲端試算表，祖媽會儘速與您聯繫！`, 'success');
+                }, 350);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showToast('傳送失敗，請稍後再試，或直接聯絡祖媽的 LINE 喔！', 'warning');
+            })
+            .finally(() => {
+                // 還原按鈕原本的美麗外觀與點擊功能
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('bg-zinc-700', 'text-zinc-400', 'cursor-not-allowed');
+                submitBtn.classList.add('bg-amber-500', 'hover:bg-amber-400');
+                btnText.innerText = '送出預約，搶佔先機';
+            });
+        }
+
+        // 4. 一鍵複製 LINE ID
+        function copyLineID() {
+            // 我們創建一個暫時性的輸入框，用來安全複製文字 (遵循 iFrame 沙盒安全機制)
+            const tempInput = document.createElement('input');
+            tempInput.value = 'zuma_sales_no1'; // 假設祖媽的 LINE ID
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            
+            try {
+                // 使用符合相容性的複製指令
+                document.execCommand('copy');
+                showToast('LINE ID 複製成功！快去新增祖媽好友吧！', 'success');
+            } catch (err) {
+                showToast('複製失敗，請手動複製：zuma_sales_no1', 'warning');
+            }
+            
+            document.body.removeChild(tempInput);
+        }
+
+        // 5. 顯示底層提示吐司 (Toast)
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toastText');
+            
+            // 變更圖標與文字
+            toastText.innerText = message;
+            
+            const icon = toast.querySelector('i');
+            if (type === 'success') {
+                icon.className = "fa-solid fa-circle-check text-emerald-400";
+            } else {
+                icon.className = "fa-solid fa-triangle-exclamation text-amber-400";
+            }
+
+            // 彈出顯示動畫
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.remove('translate-y-10', 'opacity-0');
+            }, 50);
+
+            // 3秒後自動收回
+            setTimeout(() => {
+                toast.classList.add('translate-y-10', 'opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
